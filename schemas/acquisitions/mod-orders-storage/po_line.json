@@ -230,6 +230,11 @@
         "type": "object",
         "$ref" : "../../common/metadata.json",
         "readonly": true
+      },
+      "customFields": {
+        "description": "Custom field values keyed by refId",
+        "type": "object",
+        "additionalProperties": true
       }
     },
     "additionalProperties": false,

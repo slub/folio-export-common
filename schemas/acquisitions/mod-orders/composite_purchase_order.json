@@ -156,6 +156,11 @@
       "needReEncumber": {
         "description": "Indicates that order needs to be re-encumbered",
         "type": "boolean"
+      },
+      "customFields": {
+        "description": "Custom field values keyed by refId",
+        "type": "object",
+        "additionalProperties": true
       }
     },
     "additionalProperties": false,
