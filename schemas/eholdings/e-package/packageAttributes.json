@@ -31,6 +31,39 @@
         "description": "Package name",
         "example": "Shenbao"
       },
+      "customDisplayName": {
+        "type": "string",
+        "description": "Custom display name of the package"
+      },
+      "managedAltNames": {
+        "type": "array",
+        "description": "The list of managed alternate names for the package",
+        "items": {
+          "type": "object",
+          "$ref": "packageAltName.json#/PackageAltName"
+        }
+      },
+      "customAltNames": {
+        "type": "array",
+        "description": "The list of custom alternate names for the package",
+        "items": {
+          "type": "object",
+          "$ref": "packageAltName.json#/PackageAltName"
+        }
+      },
+      "managedDescription": {
+        "type": "string",
+        "description": "The managed description of the package"
+      },
+      "customDescription": {
+        "type": "string",
+        "description": "The custom description of the package"
+      },
+      "isFreeAccess": {
+        "type": "boolean",
+        "description": "Whether this package has free access designation or not",
+        "example": false
+      },
       "packageId": {
         "type": "string",
         "description": "Package Id",
@@ -65,6 +98,14 @@
         "type": "object",
         "description": "Visibility data",
         "$ref": "../visibilityData.json#/VisibilityData"
+      },
+      "visibility": {
+        "type": "array",
+        "description": "Visibility details per category",
+        "items": {
+          "type": "object",
+          "$ref": "packageVisibility.json#/PackageVisibility"
+        }
       },
       "allowKbToAddTitles": {
         "type": "boolean",

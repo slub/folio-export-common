@@ -1,0 +1,18 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "Package Alternate Name Schema",
+  "description": "Package Alternate Name Schema",
+  "PackageAltName": {
+    "type": "object",
+    "properties": {
+      "id": {
+        "type": "integer",
+        "description": "The id of the alternate name of the package"
+      },
+      "altName": {
+        "type": "string",
+        "description": "The alternate name of the package"
+      }
+    }
+  }
+}

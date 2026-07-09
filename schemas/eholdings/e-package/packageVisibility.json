@@ -1,0 +1,23 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "Package Visibility Schema",
+  "description": "Package Visibility Schema",
+  "PackageVisibility": {
+    "type": "object",
+    "properties": {
+      "category": {
+        "type": "string",
+        "description": "Visibility category",
+        "enum": ["PF", "FTF", "MARC"]
+      },
+      "hidden": {
+        "type": "boolean",
+        "description": "Hidden status"
+      },
+      "reason": {
+        "type": "string",
+        "description": "Reason the resource was hidden"
+      }
+    }
+  }
+}
