@@ -6,11 +6,22 @@
     "properties": {
       "emailFrom": {
         "description": "Send email from address",
-        "type": "string"
+        "type": "string",
+        "format": "email"
       },
       "emailTo": {
         "description": "Send email to address",
-        "type": "string"
+        "type": "string",
+        "format": "email"
+      },
+      "emailBcc": {
+        "description": "Blind carbon copy email address(es)",
+        "type": "array",
+        "items": {
+          "description": "Blind carbon copy email address",
+          "type": "string",
+          "format": "email"
+        }
       },
       "isPrimaryTransmissionMethod": {
         "description": "Primary transmission method",
