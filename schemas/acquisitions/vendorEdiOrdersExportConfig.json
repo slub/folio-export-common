@@ -26,6 +26,9 @@
         "description": "EDI config for this vendor",
         "$ref": "ediConfig.json#/EdiConfig"
       },
+      "ediEmail": {
+        "$ref": "ediEmail.json#/EdiEmail"
+      },
       "ediFtp": {
         "$ref": "ediFtp.json#/EdiFtp"
       },
@@ -50,7 +53,8 @@
         "type": "string",
         "enum": [
           "FTP",
-          "File download"
+          "File download",
+          "Email"
         ]
       },
       "fileFormat": {
