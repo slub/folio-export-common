@@ -16,6 +16,15 @@
       "description":"address of the recipient",
       "type": "string"
     },
+    "bcc": {
+      "description": "Blind carbon copy recipients",
+      "type": "array",
+      "items": {
+        "description": "Blind carbon copy recipient",
+        "type": "string",
+        "format": "email"
+      }
+    },
     "header": {
       "description":"subject of email",
       "type": "string"
