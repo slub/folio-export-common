@@ -94,11 +94,6 @@
         "description": "Title count",
         "example": 1
       },
-      "visibilityData": {
-        "type": "object",
-        "description": "Visibility data",
-        "$ref": "../visibilityData.json#/VisibilityData"
-      },
       "visibility": {
         "type": "array",
         "description": "Visibility details per category",
