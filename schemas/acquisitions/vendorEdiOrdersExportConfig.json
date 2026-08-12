@@ -72,6 +72,14 @@
           "description": "UUID of the piece",
           "type": "string"
         }
+      },
+      "poLineIds": {
+        "description": "PO line ids to export manually, ignoring automaticExport/manualPo flags. Applicable only for Ordering integration type",
+        "type": "array",
+        "items": {
+          "description": "UUID of the PO line",
+          "type": "string"
+        }
       }
     }
   }
